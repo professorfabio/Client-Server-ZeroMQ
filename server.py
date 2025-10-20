@@ -6,7 +6,7 @@ from const import *
 def server():
   context = zmq.Context()
   socket  = context.socket(zmq.REP)       # create reply socket
-  socket.bind("tcp://*:"+ "PORT")            # bind socket to address
+  socket.bind("tcp://*:"+ PORT)            # bind socket to address
 
   while True:
     message = socket.recv()               # wait for incoming message
