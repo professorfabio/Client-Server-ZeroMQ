@@ -17,20 +17,20 @@ Simple example of the client-server pattern using ZeroMQ
     source myvenv/bin/activate
     pip3 install pyzmq
 
-### Next, configure the IP address and port number of the publisher's machine in the constPS.py file
+### Next, configure the IP address and port number of the server's machine in the const.py file
 
 Note: Make sure that this repo is cloned in all the machines used for this experiment.
 
-### Then, run the publisher and subscriber:
+### Then, run the client and server:
 
 On the machine for which the IP address was configured:
 
-    python3 publisher.py
+    python3 server.py
 
 On another machine:
 
-    python3 subscriber.py
+    python3 client.py
 
-### Now, add other topics for in the publisher and create subscribers for the new topics.
+### Now, add other services (operations) in the server and call them from the client.
 
     
